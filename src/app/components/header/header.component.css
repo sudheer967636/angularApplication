@@ -1,0 +1,23 @@
+.displayFlex{
+  display:flex;
+  align-items:center;
+  width:100%;
+  gap:10px;
+}
+.example-spacer{
+  flex : 1 1 auto;
+}
+button.active{
+  background-color:rgba(255,0,0,0.5);
+}
+input.searchInput{
+  flex : 1 1 auto;
+  border-radius: 15px;
+  border:none;
+  outline:none;
+  padding:5px;
+  margin-left:80px;
+  box-shadow: 2px 2px 2px grey ;
+
+
+}

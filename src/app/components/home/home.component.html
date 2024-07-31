@@ -1,0 +1,11 @@
+
+<div class="card-sizing ">
+  <div class="card" *ngFor="let data of Data">
+    <img src={{data.image}} alt="image broken" class="card-img-top">
+    <div class="card-body">
+      <div class="card-title fs-5">{{data.title}}</div>
+     <div class="card-footer text-info" (click)="showDetails(data)">... click here for more details</div>
+
+    </div>
+  </div>
+</div>

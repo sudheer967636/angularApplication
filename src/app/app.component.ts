@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-sample-project';
+  childData: any;
+  sendToModel(edata:any){
+    console.log(edata)
+  }
 }

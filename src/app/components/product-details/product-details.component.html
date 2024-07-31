@@ -1,0 +1,20 @@
+
+<div class="card wrapper mx-auto ">
+  <img src={{productsDetails.image}} class="card-img-top mx-auto mt-2" alt="">
+  <div class="card-body">
+    <div class="card-title fs-4">{{productsDetails.title}}</div>
+    <div class="card-description"> <i class="fw-bold">Description:</i> {{productsDetails.description}}</div>
+  </div>
+  <div class="card-footer">
+    <div>
+        <i class="fw-bold">categorey:</i> {{productsDetails.category}}
+    </div>
+    <div>
+      <i class="fw-bold">price:</i> {{productsDetails.price}}
+    </div>
+  </div>
+</div>
+<button mat-raised-button color="warn" class="float-end m-4" mat-dialog-close="closed">close</button>
+<button mat-raised-button color="primary" class="float-end my-4 " mat-dialog-close="closed" (click)="goToCart()">buy</button>
+
+

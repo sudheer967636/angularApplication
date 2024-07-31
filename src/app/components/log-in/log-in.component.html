@@ -1,0 +1,24 @@
+<div class="conatiner">
+  <div class="card w-50 mx-auto mt-4">
+    <div class="card-header text-center bg-info fs-2 fw-4">Log-In Form</div>
+    <form action="" [formGroup]="userLogin">
+      <div class="card-body">
+        <div class="form-group" >
+          <label for="fullName" class="form-label">Enter Your Name </label>
+          <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="off" formControlName="userName">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label mt-3">Enter Your email</label>
+          <input type="email" class="form-control" id="email" name="email" autocomplete="off" formControlName="email">
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label mt-3">Enter Your password</label>
+          <input type="password" class="form-control" id="password" name="password" autocomplete="off"  formControlName="password" >
+        </div>
+        <div>
+          <button class="btn btn-primary mt-4 mb-2 float-end" (click)="sendUserLoginData()">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
